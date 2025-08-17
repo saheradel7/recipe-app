@@ -1,6 +1,8 @@
 FROM python:3.9-alpine3.13
 
 ENV PYTHONUNBUFFERED=1
+ARG DEV=false
+
 
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
